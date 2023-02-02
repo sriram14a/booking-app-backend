@@ -42,5 +42,4 @@ router.get("/", async (req, res) => {
   await getAllRooms(req);
   res.send(req);
 });
-console.log("2")
-export const roomRo
+export const roomRouter = router;
