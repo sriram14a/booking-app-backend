@@ -26,7 +26,7 @@ export const client = await createConnection();
 app.use(express.json());
 
 app.get('/', function (req, res) {
-  res.send('Hello Welcome To booking App<br/><br/>localhost:8000/rooms - for all rooms<br/>localhost:8000/rooms/id(1) - for search room<br/>localhost:8000/rooms?customer_name=name - for rooms by customer name')
+  res.send('Hello Welcome To booking App<br/><br/> /rooms - for all rooms<br/> /rooms/id(1) - for search room<br/> /rooms?customer_name=name - for rooms by customer name')
 })
 
 app.use("/Rooms", roomRouter)
